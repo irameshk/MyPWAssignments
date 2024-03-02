@@ -10,7 +10,7 @@
   Verify the title of the page (using page.title() method) */
 
 import { test, chromium } from "@playwright/test";
-test("Launching the browser",async () => {
+test("Launching the Salesforce and verify Title",async () => {
     
     const browserInstance = await chromium.launch({headless:false, channel:"chromium"}); 
     const browserContext = await browserInstance.newContext(); 
