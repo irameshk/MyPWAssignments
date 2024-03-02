@@ -11,7 +11,7 @@ Assignment: 1 Create Lead
 9. Click Save and Verify Leads name created */
 
 import { test, chromium } from "@playwright/test";
-test("Create Leaftab leads",async () => {
+test("Create salesforce leads",async () => {
     
     const browserInstance = await chromium.launch({headless:false, channel:"chromium"}); 
     const browserContext = await browserInstance.newContext(); 
